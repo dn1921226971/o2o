@@ -11,47 +11,40 @@ import java.util.Date;
 public class Shop {
 	private Long shopId;
 	private String shopName;
-	/**
-	 * 店铺的描述
-	 */
+
+	/** 店铺的描述 */
 	private String shopDesc;
-	/**
-	 * 店铺的具体地址
-	 */
+
+	/** 店铺的具体地址 */
 	private String shopAddr;
-	/**
-	 * 店铺的电话
-	 */
+
+	/** 店铺的电话 */
 	private String phone;
-	/**
-	 * 店铺的缩略图地址
-	 */
+
+	/** 店铺的缩略图地址 */
 	private String shopImg;
-	/**
-	 * 店铺的权重
-	 */
+
+	/** 店铺的权重 */
 	private Integer priority;
+
 	private Date createTime;
 	private Date lastEditTime;
+
 	/**
 	 * 店铺的状态 -1：表示不可用，0：表示审核中，1：表示可用
 	 */
 	private Integer enableStatus;
-	/**
-	 * 超级管理员给店家的建议
-	 */
+
+	/** 超级管理员给店家的建议 */
 	private String advice;
-	/**
-	 * 店铺的所属区域
-	 */
+
+	/** 店铺的所属区域 */
 	private Area area;
-	/**
-	 * 店铺的创建者，也就是老板
-	 */
+
+	/** 店铺的创建者，也就是老板 */
 	private PersonInfo owner;
-	/**
-	 * 店铺的所属类别
-	 */
+
+	/** 店铺的所属类别 */
 	private ShopCategory shopCategory;
 
 	public Long getShopId() {

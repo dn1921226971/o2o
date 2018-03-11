@@ -10,27 +10,23 @@ import java.util.Date;
  */
 public class ShopCategory {
 	private Long shopCategoryId;
-	/**
-	 * 店铺类别的名称
-	 */
+
+	/** 店铺类别的名称 */
 	private String shopCategoryName;
-	/**
-	 * 店铺类别的描述
-	 */
+
+	/** 店铺类别的描述 */
 	private String shopCategoryDesc;
-	/**
-	 * 店铺类别的图片
-	 */
+
+	/** 店铺类别的图片 */
 	private String shopcategoryImg;
-	/**
-	 * 店铺类别的权重
-	 */
+
+	/** 店铺类别的权重 */
 	private Integer priority;
+
 	private Date createTime;
 	private Date lastEditTime;
-	/**
-	 * 店铺类别的上一级(ID)
-	 */
+
+	/** 店铺类别的上一级(ID) */
 	private ShopCategory parent;
 
 	public Long getShopCategoryId() {

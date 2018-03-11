@@ -11,30 +11,29 @@ import java.util.Date;
 public class PersonInfo {
 	private Long userId;
 	private String name;
-	/**
-	 * 用户的头像地址
-	 */
+
+	/** 用户的头像地址 */
 	private String profileImg;
+	
 	private String email;
-	/**
-	 * 用户的性别
-	 */
+
+	/** 用户的性别 */
 	private String gender;
+
 	/**
 	 * 用户的状态 0:禁止使用本平台,1:允许使用本平台
 	 */
 	private Integer enableStatus;
+
 	/**
 	 * 用户的身份标识 1：表示顾客，2：表示店家，3：表示超级管理员
 	 */
 	private Integer userType;
-	/**
-	 * 用户的创建时间
-	 */
+
+	/** 用户的创建时间 */
 	private Date createTime;
-	/**
-	 * 用户的最后一次修改时间
-	 */
+
+	/** 用户的最后一次修改时间 */
 	private Date lastEditTime;
 
 	public Long getUserId() {

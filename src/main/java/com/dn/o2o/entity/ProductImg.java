@@ -14,9 +14,8 @@ public class ProductImg {
 	private String imgDesc;
 	private Integer priority;
 	private Date createTime;
-	/**
-	 * 图片的所属商品ID
-	 */
+
+	/** 图片的所属商品ID */
 	private Long productId;
 
 	public Long getProductImgId() {

@@ -10,10 +10,10 @@ import java.util.Date;
  */
 public class ProductCategory {
 	private Long productCategoryId;
-	/**
-	 * 商品类别的所属店铺
-	 */
+
+	/** 商品类别的所属店铺 */
 	private Long shopId;
+
 	private String productCategoryName;
 	private Integer priority;
 	private Date createTime;

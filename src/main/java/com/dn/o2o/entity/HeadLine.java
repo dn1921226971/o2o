@@ -10,26 +10,24 @@ import java.util.Date;
  */
 public class HeadLine {
 	private Long lineId;
-	/**
-	 * 头条的名称
-	 */
+
+	/** 头条的名称 */
 	private String lineName;
-	/**
-	 * 头条的链接
-	 */
+
+	/** 头条的链接 */
 	private String lineLink;
-	/**
-	 * 头条的图片
-	 */
+
+	/** 头条的图片 */
 	private String lineImg;
-	/**
-	 * 头条的权重
-	 */
+
+	/** 头条的权重 */
 	private Integer priority;
+
 	/**
 	 * 头条的状态 0：表示不可用，1：表示可用
 	 */
 	private Integer enableStatus;
+	
 	private Date createTime;
 	private Date lastEditTime;
 

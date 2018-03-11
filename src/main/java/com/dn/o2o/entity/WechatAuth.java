@@ -10,10 +10,10 @@ import java.util.Date;
  */
 public class WechatAuth {
 	private Long wechatAuthId;
-	/**
-	 * openId是微信账号和公众号绑定的唯一标识
-	 */
+
+	/** openId是微信账号和公众号绑定的唯一标识 */
 	private String openId;
+
 	private Date createTime;
 	private PersonInfo personInfo;
 

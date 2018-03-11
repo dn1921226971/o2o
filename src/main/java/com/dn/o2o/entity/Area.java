@@ -11,17 +11,14 @@ import java.util.Date;
 public class Area {
 	private Integer areaId;
 	private String areaName;
-	/**
-	 * 区域的权重
-	 */
+
+	/** 区域的权重 */
 	private Integer priority;
-	/**
-	 * 区域的创建时间
-	 */
+
+	/** 区域的创建时间 */
 	private Date createTime;
-	/**
-	 * 区域的最后一次修改时间
-	 */
+
+	/** 区域的最后一次修改时间 */
 	private Date lastEditTime;
 
 	public Integer getAreaId() {
