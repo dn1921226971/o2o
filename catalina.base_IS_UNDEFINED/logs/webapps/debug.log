@@ -1,0 +1,17 @@
+2018-03-14 11:08:25.634 [main] DEBUG com.dn.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id, shop_category_id, shop_name, shop_desc, shop_addr, phone, shop_img, priority, create_time, last_edit_time,enable_status, advice) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?, ?, ?) 
+2018-03-14 11:16:06.152 [main] DEBUG com.dn.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id, shop_category_id, shop_name, shop_desc, shop_addr, phone, shop_img, priority, create_time, last_edit_time,enable_status, advice) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2018-03-14 11:21:26.762 [main] DEBUG com.dn.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id, shop_category_id, shop_name, shop_desc, shop_addr, phone, shop_img, priority, create_time, last_edit_time,enable_status, advice) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2018-03-14 11:21:26.893 [main] DEBUG com.dn.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 测试的店铺名(String), test(String), test(String), test(String), test(String), null, 2018-03-14 11:21:26.209(Timestamp), null, 1(Integer), 审核中(String)
+2018-03-14 11:21:26.999 [main] DEBUG com.dn.o2o.dao.ShopDao.insertShop - <==    Updates: 1
+2018-03-14 11:25:03.160 [main] DEBUG com.dn.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id, shop_category_id, shop_name, shop_desc, shop_addr, phone, shop_img, priority, create_time, last_edit_time,enable_status, advice) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2018-03-14 11:25:03.215 [main] DEBUG com.dn.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 测试的店铺名(String), test(String), test(String), test(String), test(String), null, 2018-03-14 11:25:02.68(Timestamp), null, 1(Integer), 审核中(String)
+2018-03-14 11:25:03.354 [main] DEBUG com.dn.o2o.dao.ShopDao.insertShop - <==    Updates: 1
+2018-03-14 11:46:45.212 [main] DEBUG com.dn.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id, shop_category_id, shop_name, shop_desc, shop_addr, phone, shop_img, priority, create_time, last_edit_time,enable_status, advice) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2018-03-14 11:46:45.313 [main] DEBUG com.dn.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 测试的店铺名(String), test(String), test(String), test(String), test(String), null, 2018-03-14 11:46:44.686(Timestamp), null, 1(Integer), 审核中(String)
+2018-03-14 11:46:45.373 [main] DEBUG com.dn.o2o.dao.ShopDao.insertShop - <==    Updates: 1
+2018-03-14 13:33:38.882 [main] DEBUG com.dn.o2o.dao.ShopDao.updateShop - ==>  Preparing: UPDATE tb_shop SET shop_desc = ?, shop_addr = ?, last_edit_time = ? WHERE shop_id = ? 
+2018-03-14 13:33:38.953 [main] DEBUG com.dn.o2o.dao.ShopDao.updateShop - ==> Parameters: 测试描述(String), 测试描述(String), 2018-03-14 13:33:38.322(Timestamp), 3(Long)
+2018-03-14 13:33:39.084 [main] DEBUG com.dn.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2018-03-14 14:02:21.404 [main] DEBUG com.dn.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2018-03-14 14:02:21.518 [main] DEBUG com.dn.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2018-03-14 14:02:21.700 [main] DEBUG com.dn.o2o.dao.AreaDao.queryArea - <==      Total: 2
