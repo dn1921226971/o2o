@@ -98,19 +98,18 @@ public class ImageUtil {
 	 * 
 	 * @return
 	 */
-	private static String getRandomFileName() {
+	public static String getRandomFileName() {
 
 		// 获取随机的五位数
 		int rannum = r.nextInt(89999) + 10000;
 		String nowTimeStr = sDateFormat.format(new Date());
-
-		return null;
+		return nowTimeStr + rannum;
 	}
 
-	public static void main(String[] args) throws IOException {
+/*	public static void main(String[] args) throws IOException {
 		String basePath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
 		Thumbnails.of(new File("F:/image/xiaohuangren.jpg")).size(200, 200)
 				.watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "watermark.jpg")), 0.25f)
 				.outputQuality(0.8f).toFile("F:/image/xiaohuangrennew.jpg");
-	}
+	}*/
 }
