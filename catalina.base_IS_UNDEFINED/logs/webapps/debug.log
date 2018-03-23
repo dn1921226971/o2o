@@ -1,8 +1,6 @@
-2018-03-22 17:41:07.821 [main] DEBUG com.dn.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id, shop_category_id, shop_name, shop_desc, shop_addr, phone, shop_img, priority, create_time, last_edit_time,enable_status, advice) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-2018-03-22 17:41:07.892 [main] DEBUG com.dn.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 测试的店铺名3(String), test3(String), test3(String), test3(String), null, null, 2018-03-22 17:41:07.721(Timestamp), 2018-03-22 17:41:07.721(Timestamp), 0(Integer), 审核中(String)
-2018-03-22 17:41:08.315 [main] DEBUG com.dn.o2o.dao.ShopDao.insertShop - <==    Updates: 1
-2018-03-22 17:41:08.350 [main] DEBUG com.dn.o2o.util.ImageUtil - current relativeAddr is:upload\item\shop\33\2018032217410811590.jpg
-2018-03-22 17:41:08.350 [main] DEBUG com.dn.o2o.util.ImageUtil - current complete addr is:D:\projectdev\image\upload\item\shop\33\2018032217410811590.jpg
-2018-03-22 17:41:09.851 [main] DEBUG com.dn.o2o.dao.ShopDao.updateShop - ==>  Preparing: UPDATE tb_shop SET shop_name = ?, shop_desc = ?, shop_addr = ?, phone = ?, shop_img = ?, last_edit_time = ?, enable_status = ?, advice = ?, shop_category_id = ?, area_id = ? WHERE shop_id = ? 
-2018-03-22 17:41:09.853 [main] DEBUG com.dn.o2o.dao.ShopDao.updateShop - ==> Parameters: 测试的店铺名3(String), test3(String), test3(String), test3(String), upload\item\shop\33\2018032217410811590.jpg(String), 2018-03-22 17:41:07.721(Timestamp), 0(Integer), 审核中(String), 1(Long), 2(Integer), 33(Long)
-2018-03-22 17:41:09.963 [main] DEBUG com.dn.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2018-03-23 00:02:11.368 [main] DEBUG com.dn.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category ORDER BY priority DESC 
+2018-03-23 00:02:11.473 [main] DEBUG com.dn.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2018-03-23 00:02:11.498 [main] DEBUG com.dn.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 2
+2018-03-23 00:02:11.514 [main] DEBUG com.dn.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id = ? ORDER BY priority DESC 
+2018-03-23 00:02:11.517 [main] DEBUG com.dn.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 1(Long)
+2018-03-23 00:02:11.824 [main] DEBUG com.dn.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
