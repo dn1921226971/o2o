@@ -18,13 +18,25 @@ import com.dn.o2o.entity.PersonInfo;
 import com.dn.o2o.entity.Shop;
 import com.dn.o2o.entity.ShopCategory;
 import com.dn.o2o.enums.ShopStateEnum;
+import com.dn.o2o.exception.ShopOperationException;
 
 public class ShopServiceTest extends BaseTest {
 	@Autowired
 	private ShopService shopService;
-
+	
 	@Test
-	public void testAddShop() throws FileNotFoundException {
+	public void testModifyShop() throws ShopOperationException, FileNotFoundException {
+		Shop shop = new Shop();
+		shop.setShopId(33L);
+		shop.setShopName("修改后的店铺名称");
+		File shopImg = new File("F:/image/dabai.jpg");
+		InputStream is = new FileInputStream(shopImg);
+		ShopExecution shopExecution = shopService.modifyShop(shop, is, "dabai.jpg");
+		System.out.println("新的图片地址:" + shopExecution.getShop().getShopImg());
+	}
+	
+	@Test
+	public void testAddShop() throws ShopOperationException, FileNotFoundException {
 		Shop shop = new Shop();
 		PersonInfo owner = new PersonInfo();
 		Area area = new Area();
