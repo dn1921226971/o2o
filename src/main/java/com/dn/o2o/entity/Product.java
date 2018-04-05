@@ -23,7 +23,7 @@ public class Product {
 	/** 商品的折扣价 */
 	private String promotionPrice;
 
-	private String priority;
+	private Integer priority;
 	private Date createTime;
 	private Date lastEditTime;
 
@@ -36,7 +36,7 @@ public class Product {
 	private List<ProductImg> productImgList;
 
 	/** 商品的所属类别 */
-	private ProductCategory productcategory;
+	private ProductCategory productCategory;
 
 	/** 商品的所属店铺 */
 	private Shop shop;
@@ -89,11 +89,11 @@ public class Product {
 		this.promotionPrice = promotionPrice;
 	}
 
-	public String getPriority() {
+	public Integer getPriority() {
 		return priority;
 	}
 
-	public void setPriority(String priority) {
+	public void setPriority(Integer priority) {
 		this.priority = priority;
 	}
 
@@ -129,12 +129,12 @@ public class Product {
 		this.productImgList = productImgList;
 	}
 
-	public ProductCategory getProductcategory() {
-		return productcategory;
+	public ProductCategory getProductCategory() {
+		return productCategory;
 	}
 
-	public void setProductcategory(ProductCategory productcategory) {
-		this.productcategory = productcategory;
+	public void setProductCategory(ProductCategory productCategory) {
+		this.productCategory = productCategory;
 	}
 
 	public Shop getShop() {
@@ -144,4 +144,5 @@ public class Product {
 	public void setShop(Shop shop) {
 		this.shop = shop;
 	}
+
 }

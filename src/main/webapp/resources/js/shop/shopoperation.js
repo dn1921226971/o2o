@@ -1,6 +1,3 @@
-/**
- * 
- */
 $(function() {
 	var shopId = getQueryString('shopId');
 	var isEdit = shopId ? true : false;
