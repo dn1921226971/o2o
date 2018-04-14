@@ -12,6 +12,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.dn.o2o.BaseTest;
+import com.dn.o2o.dto.ImageHolder;
 import com.dn.o2o.dto.ShopExecution;
 import com.dn.o2o.entity.Area;
 import com.dn.o2o.entity.PersonInfo;
@@ -23,7 +24,7 @@ import com.dn.o2o.exception.ShopOperationException;
 public class ShopServiceTest extends BaseTest {
 	@Autowired
 	private ShopService shopService;
-	
+
 	@Test
 	public void testGetShopList() {
 		Shop shopCondition = new Shop();
@@ -34,6 +35,7 @@ public class ShopServiceTest extends BaseTest {
 		System.out.println("店铺列表数为：" + se.getShopList().size());
 		System.out.println("店铺总数为：" + se.getCount());
 	}
+
 	@Test
 	public void testModifyShop() throws ShopOperationException, FileNotFoundException {
 		Shop shop = new Shop();
@@ -41,10 +43,11 @@ public class ShopServiceTest extends BaseTest {
 		shop.setShopName("修改后的店铺名称");
 		File shopImg = new File("F:/image/dabai.jpg");
 		InputStream is = new FileInputStream(shopImg);
-		ShopExecution shopExecution = shopService.modifyShop(shop, is, "dabai.jpg");
+		ImageHolder imageHolder = new ImageHolder("dabai.jpg", is);
+		ShopExecution shopExecution = shopService.modifyShop(shop, imageHolder);
 		System.out.println("新的图片地址:" + shopExecution.getShop().getShopImg());
 	}
-	
+
 	@Test
 	public void testAddShop() throws ShopOperationException, FileNotFoundException {
 		Shop shop = new Shop();
@@ -68,7 +71,8 @@ public class ShopServiceTest extends BaseTest {
 		shop.setAdvice("审核中");
 		File shopImg = new File("F:/image/xiaohuangren.jpg");
 		InputStream is = new FileInputStream(shopImg);
-		ShopExecution se = shopService.addShop(shop, is, shopImg.getName());
+		ImageHolder imageHolder = new ImageHolder(shopImg.getName(), is);
+		ShopExecution se = shopService.addShop(shop, imageHolder);
 		assertEquals(ShopStateEnum.CHECK.getState(), se.getState());
 	}
 

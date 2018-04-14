@@ -18,7 +18,7 @@ public class ShopCategory {
 	private String shopCategoryDesc;
 
 	/** 店铺类别的图片 */
-	private String shopcategoryImg;
+	private String shopCategoryImg;
 
 	/** 店铺类别的权重 */
 	private Integer priority;
@@ -53,12 +53,12 @@ public class ShopCategory {
 		this.shopCategoryDesc = shopCategoryDesc;
 	}
 
-	public String getShopcategoryImg() {
-		return shopcategoryImg;
+	public String getShopCategoryImg() {
+		return shopCategoryImg;
 	}
 
-	public void setShopcategoryImg(String shopcategoryImg) {
-		this.shopcategoryImg = shopcategoryImg;
+	public void setShopCategoryImg(String shopCategoryImg) {
+		this.shopCategoryImg = shopCategoryImg;
 	}
 
 	public Integer getPriority() {
@@ -92,4 +92,5 @@ public class ShopCategory {
 	public void setParent(ShopCategory parent) {
 		this.parent = parent;
 	}
+
 }

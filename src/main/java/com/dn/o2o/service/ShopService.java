@@ -1,7 +1,6 @@
 package com.dn.o2o.service;
 
-import java.io.InputStream;
-
+import com.dn.o2o.dto.ImageHolder;
 import com.dn.o2o.dto.ShopExecution;
 import com.dn.o2o.entity.Shop;
 import com.dn.o2o.exception.ShopOperationException;
@@ -34,7 +33,7 @@ public interface ShopService {
 	 * @return
 	 * @throws ShopOperationException
 	 */
-	ShopExecution modifyShop(Shop shop, InputStream shopImgInputStream, String fileName) throws ShopOperationException;
+	ShopExecution modifyShop(Shop shop, ImageHolder thumbnail) throws ShopOperationException;
 
-	ShopExecution addShop(Shop shop, InputStream shopImgInputStream, String fileName) throws ShopOperationException;
+	ShopExecution addShop(Shop shop, ImageHolder thumbnail) throws ShopOperationException;
 }
