@@ -6,6 +6,8 @@ import java.util.List;
 import com.dn.o2o.entity.HeadLine;
 
 public interface HeadLineService {
+	public static final String HLLISTKEY = "headlinelist";
+
 	/**
 	 * 根据传入的条件返回指定的头条列表
 	 * 
@@ -13,5 +15,5 @@ public interface HeadLineService {
 	 * @return
 	 * @throws IOException
 	 */
-	List<HeadLine> getHeadLineList(HeadLine headLineCondition) throws IOException;
+	List<HeadLine> getHeadLineList(HeadLine headLineCondition);
 }

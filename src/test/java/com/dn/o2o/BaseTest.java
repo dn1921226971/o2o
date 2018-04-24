@@ -10,9 +10,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @author dn
  *
  */
-//告诉junit spring配置文件的位置
+// 告诉junit spring配置文件的位置
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({ "classpath:spring/spring-dao.xml", "classpath:spring/spring-service.xml" })
+@ContextConfiguration({ "classpath:spring/spring-dao.xml", "classpath:spring/spring-service.xml",
+		"classpath:spring/spring-redis.xml" })
 public class BaseTest {
 
 }
